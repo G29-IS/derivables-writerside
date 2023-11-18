@@ -56,6 +56,6 @@
     </chapter>
 
     <chapter title="Twilio" id="backend-twilio">
-        Per verificare il numero di telefono inserito dall’utente durante la registrazione all’app, viene impiegato un <emphasis>SMS service</emphasis>: <a href="https://www.twilio.com/en-us/messaging/channels/sms">Twilio</a> .
+        Per verificare il numero di telefono inserito dall’utente durante la registrazione all’app, viene impiegato un <emphasis>SMS service</emphasis>: <a href="https://www.twilio.com/en-us/messaging/channels/sms">Twilio</a>.
     </chapter>
 </topic>
