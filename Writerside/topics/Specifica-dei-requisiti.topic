@@ -5,5 +5,13 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Specifica dei requisiti" id="Specifica-dei-requisiti">
 
-    <p>Start typing here...</p>
+    <card-summary>
+        Documento di specifica dei requisiti funzionali e non funzionali con diagrammi dei casi d’uso, tabelle, diagrammi di contesto e dei componenti
+    </card-summary>
+    <link-summary>
+        Documento di specifica dei requisiti funzionali e non funzionali con diagrammi dei casi d’uso, tabelle, diagrammi di contesto e dei componenti
+    </link-summary>
+    <web-summary>
+        Documento di specifica dei requisiti funzionali e non funzionali con diagrammi dei casi d’uso, tabelle, diagrammi di contesto e dei componenti
+    </web-summary>
 </topic>

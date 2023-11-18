@@ -4,9 +4,9 @@
 
 <instance-profile id="di"
                  name="E-20"
-                 start-page="introduzione.md">
+                  start-page="Introduzione.topic">
 
-    <toc-element topic="introduzione.md"/>
+    <toc-element topic="Introduzione.topic"/>
     <toc-element topic="Analisi-dei-requisiti.topic">
         <toc-element topic="Obbiettivi-del-progetto.topic"/>
         <toc-element topic="Requisiti-funzionali.topic"/>
