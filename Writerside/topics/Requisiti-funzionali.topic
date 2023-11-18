@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Requisiti funzionali" id="Requisiti-funzionali">
+
+    <p>Nel presente capitolo vengono riportati i requisiti funzionali (<tooltip term="rf">RF</tooltip>) del sistema, divisi per ruolo.</p>
+
+    <chapter title="RF 1 - Visualizzare la bacheca" id="analisi-rf-1">
+        <list type="bullet">
+            <li>L’utente accede a una bacheca in cui potrà visualizzare gli eventi nella posizione geografica in cui si trova, classificati per giornata.</li>
+            <li>Gli eventi della bacheca vengono suddivisi di default per giornate e gli eventi di ogni giorno vengono ordinati per distanza geografica dall’utente.</li>
+        </list>
+    </chapter>
+
+    <chapter title="RF 2 - Filtrare gli eventi della bacheca" id="analisi-rf-2">
+        <p>
+            L’utente avrà la possibilità di filtrare gli eventi su base geografica specificando una città invece che la posizione in cui si trova. Inoltre è possibile filtrare anche applicando un intervallo di date future a quella attuale.
+        </p>
+    </chapter>
+
+    <chapter title="RF 3 - Visualizzare le informazioni dell’evento" id="analisi-rf-3">
+        <p>
+            L’utente deve poter visualizzare le informazioni di ogni evento mostrato nella bacheca, quali:
+        </p>
+        <list type="decimal">
+            <li>il nome</li>
+            <li>la descrizione</li>
+            <li>l'organizzatore</li>
+            <li>la data e l'ora d'inizio</li>
+            <li>il luogo</li>
+            <li>il numero massimo di partecipanti (opzionale)</li>
+            <!-- TODO: Cos'era? -->
+            <li>la disponibilità</li>
+            <li>lo stato ( RF 16)</li>
+        </list>
+    </chapter>
+</topic>

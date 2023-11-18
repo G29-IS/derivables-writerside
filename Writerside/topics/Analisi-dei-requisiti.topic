@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Analisi dei requisiti" id="Analisi-dei-requisiti">
+
+    <link-summary>Documento di analisi dei requisiti funzionali, non funzionali, front-end e back-end</link-summary>
+    <card-summary>Documento di analisi dei requisiti funzionali, non funzionali, front-end e back-end</card-summary>
+    <link-summary>Documento di analisi dei requisiti funzionali, non funzionali, front-end e back-end</link-summary>
+
+    <chapter title="Scopo del documento" id="analisi-scopo-del-documento">
+        <p>
+            Il presente documento riporta l’analisi dei requisiti di sistema del progetto E20 in linguaggio naturale.
+        </p>
+        <p>
+            L’obiettivo di questo documento è quello di:
+        </p>
+        <list>
+            <li>Presentare gli <a href="Obbiettivi-del-progetto.topic">obiettivi del progetto</a></li>
+            <li>Definire i <a href="Requisiti-funzionali.topic">requisiti funzionali</a> e <a href="Requisiti-non-funzionali.topic">non funzionali</a> </li>
+            <li>Presentare il <a href="Design-frontend.topic">design del Frontend</a> </li>
+            <li>Presentare il <a href="Design-backend.topic">Backend</a> </li>
+        </list>
+    </chapter>
+</topic>

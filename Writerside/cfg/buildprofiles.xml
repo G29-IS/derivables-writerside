@@ -1,0 +1,18 @@
+<buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <variables>
+        <!--
+        TODO: Logo
+        <header-logo>unitn_logo.png</header-logo>
+        -->
+    </variables>
+    <build-profile instance="di">
+        <variables>
+            <noindex-content>false</noindex-content>
+        </variables>
+    </build-profile>
+
+    <footer>
+
+    </footer>
+</buildprofiles>

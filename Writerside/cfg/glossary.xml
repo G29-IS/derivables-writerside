@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE terms SYSTEM "https://resources.jetbrains.com/writerside/1.0/glossary.dtd">
+<terms>
+    <!-- Termini generici -->
+    <term name="frontend">La parte del software visibile all'utente e con cui egli può interagire</term>
+    <term name="backend">La parte del software che permette l'effettivo funzionamento delle interazioni con gli utenti e software esterni</term>
+    <term name="rf">Requisiti funzionali</term>
+    <term name="rnf">Requisiti non funzionali</term>
+
+    <!-- Termini specifici per il contesto di E-20 -->
+    <term name="utente-anonimo">Utente non autenticato</term>
+</terms>

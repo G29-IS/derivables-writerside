@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Obbiettivi del progetto" id="Obbiettivi-del-progetto" help-id="Obbiettivo-del-progetto">
+
+    <p>
+        Il progetto ha come obiettivo la realizzazione di un’applicazione che permetta la promozione e la partecipazione a eventi sociali nel territorio.
+    </p>
+    <p>
+        Nello specifico l'utente utilizzatore dell'applicazione sarà in grado di:
+    </p>
+    <list type="decimal">
+        <!-- TODO: Non dovremo stare più sul generale? -->
+        <li>visualizzare una bacheca in cui vengono mostrati gli eventi in ordine cronologico, da quelli più imminenti a quelli che si svolgeranno prossimamente.</li>
+        <li>creare un evento.</li>
+        <li>indicare la sua partecipazione ad un evento, condividerlo su app esterne e visualizzare / pubblicare commenti sotto l’evento</li>
+        <li>seguire o essere seguito da altri utenti sulla piattaforma tramite un sistema social follower/seguiti. Queste connessioni sociali verranno poi utilizzate per indicare all’utente gli eventi a cui i suoi amici partecipano.</li>
+    </list>
+</topic>

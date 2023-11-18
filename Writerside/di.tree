@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="di"
+                 name="E-20"
+                 start-page="introduzione.md">
+
+    <toc-element topic="introduzione.md"/>
+    <toc-element topic="Analisi-dei-requisiti.topic">
+        <toc-element topic="Obbiettivi-del-progetto.topic"/>
+        <toc-element topic="Requisiti-funzionali.topic"/>
+        <toc-element topic="Requisiti-non-funzionali.topic"/>
+        <toc-element topic="Design-frontend.topic"/>
+        <toc-element topic="Design-backend.topic"/>
+    </toc-element>
+    <toc-element topic="Specifica-dei-requisiti.topic">
+        <toc-element topic="specifica-Requisiti-funzionali.topic"/>
+        <toc-element topic="specifica-Requisiti-non-funzionali.topic"/>
+        <toc-element topic="Analisi-del-contesto.topic"/>
+        <toc-element topic="Analisi-dei-componenti.topic"/>
+    </toc-element>
+</instance-profile>
