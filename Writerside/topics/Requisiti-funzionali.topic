@@ -5,35 +5,284 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Requisiti funzionali" id="Requisiti-funzionali">
 
-    <p>Nel presente capitolo vengono riportati i requisiti funzionali (<tooltip term="rf">RF</tooltip>) del sistema, divisi per ruolo.</p>
+    <show-structure for="chapter" depth="2"/>
 
-    <chapter title="RF 1 - Visualizzare la bacheca" id="analisi-rf-1">
-        <list type="bullet">
-            <li>L’utente accede a una bacheca in cui potrà visualizzare gli eventi nella posizione geografica in cui si trova, classificati per giornata.</li>
-            <li>Gli eventi della bacheca vengono suddivisi di default per giornate e gli eventi di ogni giorno vengono ordinati per distanza geografica dall’utente.</li>
-        </list>
+    <p>
+        Nel presente capitolo vengono riportati i requisiti funzionali (
+        <tooltip term="rf">RF</tooltip>
+        ) del sistema, divisi secondo i seguenti ruoli:
+    </p>
+    <deflist>
+        <def title="Utente generico">
+            Comprende qualsiasi tipo di utente, sia anonimo che autenticato,
+        </def>
+        <def title="Utente anonimo">
+            Utente che non si é autenticato.
+        </def>
+        <def title="Utente autenticato">
+            Utente che ha effettuato l'autenticazione tramite il processo di
+            <emphasis>login</emphasis>
+            , e risulta cosí autenticato durante l'utilizzo dell'applicazione.
+        </def>
+    </deflist>
+
+    <chapter title="Utente generico" id="analisi-rf-utente-generico">
+        <chapter title="RF 1 - Visualizzare la bacheca" id="analisi-rf-1">
+            <list type="bullet">
+                <li>L’utente accede a una bacheca in cui potrà visualizzare gli eventi nella posizione geografica in cui
+                    si trova, classificati per giornata.
+                </li>
+                <li>Gli eventi della bacheca vengono suddivisi di default per giornate e gli eventi di ogni giorno
+                    vengono ordinati per distanza geografica dall’utente.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 2 - Filtrare gli eventi della bacheca" id="analisi-rf-2">
+            <p>
+                L’utente avrà la possibilità di filtrare gli eventi su base geografica specificando una città invece che
+                la posizione in cui si trova. Inoltre è possibile filtrare anche applicando un intervallo di date future
+                a quella attuale.
+            </p>
+        </chapter>
+
+        <chapter title="RF 3 - Visualizzare le informazioni dell’evento" id="analisi-rf-3">
+            <p>
+                L’utente deve poter visualizzare le informazioni di ogni evento mostrato nella bacheca, quali:
+            </p>
+            <list type="decimal">
+                <li>il nome</li>
+                <li>la descrizione</li>
+                <li>l'organizzatore</li>
+                <li>la data e l'ora d'inizio</li>
+                <li>il locale</li>
+                <li>il numero massimo di partecipanti (opzionale)</li>
+                <!-- TODO: Cos'era? -->
+                <li>la disponibilità</li>
+                <li>lo stato (RF 16)</li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 4 - Aggiungere un evento al calendario" id="analisi-rf-4">
+            <p>
+                L’utente avrà la possibilità di aggiungere automaticamente al proprio calendario un evento.
+            </p>
+        </chapter>
+
+        <chapter title="RF 5 - Condividere un evento" id="analisi-rf-5">
+            <p>
+                L’utente avrà la possibilità di condividere un evento su applicazioni esterne.
+            </p>
+        </chapter>
+
+        <chapter title="RF 6 - Cercare un evento / utente / località" id="analisi-rf-6">
+            <p>
+                L’utente avrà la possibilità di cercare altri utenti tramite il nome utente, eventi (inclusi quelli
+                conclusi) tramite il nome dell’evento oppure città di cui si è interessati a conoscere gli eventi
+            </p>
+        </chapter>
+
+        <chapter title="RF 7 - Profilo utente" id="analisi-rf-7">
+            <p>
+                <!-- TODO: Profilo sempre pubblico? -->
+                Ogni utente dispone di un profilo pubblico visibile a tutti gli utenti in cui sono visualizzati:
+            </p>
+            <list type="bullet">
+                <li>gli eventi a cui parteciperà</li>
+                <li>gli eventi a cui ha partecipato</li>
+                <li>gli eventi in programma che sta organizzando</li>
+                <li>gli eventi organizzati in passato</li>
+            </list>
+        </chapter>
     </chapter>
 
-    <chapter title="RF 2 - Filtrare gli eventi della bacheca" id="analisi-rf-2">
-        <p>
-            L’utente avrà la possibilità di filtrare gli eventi su base geografica specificando una città invece che la posizione in cui si trova. Inoltre è possibile filtrare anche applicando un intervallo di date future a quella attuale.
-        </p>
+    <chapter title="Utente anonimo" id="analisi-rf-utente-anonimo">
+        <chapter title="RF 8 - Creare account" id="analisi-rf-8">
+            <p>L’utente anonimo potrà registrarsi all’applicazione compilando un apposito form in cui sono richieste le
+                seguenti informazioni:</p>
+            <list type="decimal">
+                <li>nome</li>
+                <li>cognome</li>
+                <li>nome utente</li>
+                <li>email</li>
+                <li>numero di telefono</li>
+                <li>data di nascita</li>
+                <li>genere</li>
+                <li>città di interesse</li>
+                <li>
+                    <p>visibilitá dell'account:</p>
+                    <list type="bullet">
+                        <li>pubblico</li>
+                        <li>privato: necessita la conferma dell'utente affinché un secondo utente possa seguire l'utente
+                            in questione
+                        </li>
+                    </list>
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 9 - Accedere" id="analisi-rf-9">
+            <list type="bullet">
+                <li>L’utente anonimo potrà accedere a un account esistente.</li>
+                <li>L’utente anonimo potrà richiedere la procedura di reset della password di un account esistente
+                    indicando l’indirizzo email di tale account.
+                </li>
+            </list>
+        </chapter>
     </chapter>
 
-    <chapter title="RF 3 - Visualizzare le informazioni dell’evento" id="analisi-rf-3">
-        <p>
-            L’utente deve poter visualizzare le informazioni di ogni evento mostrato nella bacheca, quali:
-        </p>
-        <list type="decimal">
-            <li>il nome</li>
-            <li>la descrizione</li>
-            <li>l'organizzatore</li>
-            <li>la data e l'ora d'inizio</li>
-            <li>il luogo</li>
-            <li>il numero massimo di partecipanti (opzionale)</li>
-            <!-- TODO: Cos'era? -->
-            <li>la disponibilità</li>
-            <li>lo stato ( RF 16)</li>
-        </list>
+    <chapter title="Utente autenticato" id="analisi-rf-utente-autenticato">
+        <chapter title="RF 10 - Modificare la password di accesso" id="analisi-rf-10">
+            <p>
+                L’utente autenticato potrà modificare la password dell’account.
+            </p>
+        </chapter>
+
+        <chapter title="RF 11 - Confermare la partecipazione all’evento" id="analisi-rf-11">
+            <p>
+                L’utente autenticato potrà confermare la partecipazione a un evento.
+            </p>
+        </chapter>
+
+        <chapter title="RF 12 - Inviare richieste di follow" id="analisi-rf-12">
+            <p>
+                L’utente avrà la facoltà di seguire direttamente un altro utente se il profilo di quest’ultimo risulta
+                pubblico, altrimenti, se privato, può inviare una richiesta di seguirlo.
+            </p>
+        </chapter>
+
+        <chapter title="RF 13 - Accettare richieste di follow" id="analisi-rf-13">
+            <p>
+                Qualora l’utente abbia configurato il proprio profilo come privato, egli avrà la capacita’ di accettare
+                o rifiutare selettivamente le richieste a sua discrezione.
+            </p>
+        </chapter>
+
+        <chapter title="RF 14 - Visualizzare gli amici che partecipano a un determinato evento" id="analisi-rf-14">
+            <p>
+                L’utente avrà la possibilità di visualizzare sulla pagina dell’evento quali degli utenti che segue
+                parteciperanno.
+            </p>
+        </chapter>
+
+        <chapter title="RF 15 - Creare un nuovo evento" id="analisi-rf-15">
+            <p>
+                L’utente autenticato potrà compilare un form per la creazione di un nuovo evento.
+                In questo form, l’utente deve aggiungere:
+            </p>
+            <list>
+                <li>nome dell'evento</li>
+                <li>foto di copertina dell'evento</li>
+                <li>descrizione</li>
+                <li>locale (nome opzionale, indirizzo)</li>
+                <li>data</li>
+                <li>orario d'inizio</li>
+                <li>tipologia</li>
+                <li>numero massimo di participanti (opzionale)</li>
+                <li>
+                    <p>visibilità dell'evento</p>
+                    <list>
+                        <li>pubblico: visibile a tutti</li>
+                        <li>accesso ristretto: visibile solo ai seguiti, ai follower o entrambi</li>
+                    </list>
+                </li>
+                <li>link di pagamento dell'eventuale prevendita a servizi esterni</li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 16 - Commentare evento" id="analisi-rf-16">
+            <list>
+                <li>
+                    L’utente avrà la possibilità di pubblicare un commento sulla pagina dell’evento e inoltre commentare
+                    sotto altri commenti per un solo livello. Non sono previsti commenti multi-livello (thread).
+                </li>
+                <li>
+                    L’utente potrà mettere like ai commenti.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 17 - Visualizzare statistiche evento" id="analisi-rf-17">
+            <p>
+                L’utente che ha organizzato un evento avrà accesso a una sezione della pagina dell’evento dedicata alla
+                visualizzazione delle statistiche che include informazioni quali:
+            </p>
+            <list>
+                <li>numero di utenti che hanno confermato la partecipazione all’evento</li>
+                <li>numero di condivisioni dell’evento</li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 18 - Modificare disponibilità evento" id="analisi-rf-18">
+            <list>
+                <li>
+                    <p>
+                        L’utente organizzatore di un evento avrà la possibilità di cambiare la disponibilità dell’evento
+                        dal valore standard
+                        <emphasis>disponibile</emphasis>
+                        a un altro dei seguenti valori:
+                    </p>
+                    <list>
+                        <li>
+                            <emphasis>in esaurimento</emphasis>
+                        </li>
+                        <li>
+                            <emphasis>cancellato</emphasis>
+                        </li>
+                        <li>
+                            <emphasis>esaurito</emphasis>
+                        </li>
+                    </list>
+                </li>
+                <li>
+                    Nel caso la disponibilità vengo impostata a
+                    <emphasis>cancellato</emphasis>
+                    , gli utenti che avevano confermato la partecipazione all’evento riceveranno una notifica.
+                </li>
+            </list>
+        </chapter>
+
+        <chapter title="RF 19 - Stato evento" id="analisi-rf-19">
+            <list>
+                <li>L’utente organizzatore avrà anche la possibilità di modificare le informazioni dell’evento. Ogni
+                    modifica imposterà lo stato <emphasis>modificato</emphasis> all’evento solo se le modifiche occorrono in un arco di tre
+                    giorni prima dell’inizio dell’evento.
+                </li>
+                <li>Gli utenti che hanno confermato la partecipazione a un evento riceveranno una notifica a ogni
+                    cambiamento dello stato dell’evento.
+                </li>
+            </list>
+        </chapter>
+    </chapter>
+
+    <chapter title="Corrispondenza da obbiettivi a requisiti funzionali" id="analisi-corrispondenza-obbiettivi" collapsible="true" default-state="expanded">
+        <table style="header-column">
+            <tr>
+                <td>Obbiettivo 1</td>
+                <td><a anchor="analisi-rf-1">RF 1</a></td>
+                <td><a anchor="analisi-rf-2">RF 2</a></td>
+                <td><a anchor="analisi-rf-3">RF 2</a></td>
+            </tr>
+            <tr>
+                <td>Obbiettivo 2</td>
+                <td><a anchor="analisi-rf-15">RF 15</a></td>
+                <td><a anchor="analisi-rf-18">RF 18</a></td>
+                <td><a anchor="analisi-rf-19">RF 19</a></td>
+            </tr>
+            <tr>
+                <td>Obbiettivo 3</td>
+                <td><a anchor="analisi-rf-5">RF 5</a></td>
+                <td><a anchor="analisi-rf-11">RF 11</a></td>
+                <td><a anchor="analisi-rf-16">RF 16</a></td>
+            </tr>
+            <tr>
+                <td>Obbiettivo 4</td>
+                <td><a anchor="analisi-rf-6">RF 6</a></td>
+                <td><a anchor="analisi-rf-7">RF 7</a></td>
+                <td><a anchor="analisi-rf-12">RF 12</a></td>
+                <td><a anchor="analisi-rf-13">RF 13</a></td>
+                <td><a anchor="analisi-rf-14">RF 14</a></td>
+            </tr>
+        </table>
     </chapter>
 </topic>

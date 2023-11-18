@@ -13,9 +13,9 @@
     </p>
     <list type="decimal">
         <!-- TODO: Non dovremo stare più sul generale? -->
-        <li>visualizzare una bacheca in cui vengono mostrati gli eventi in ordine cronologico, da quelli più imminenti a quelli che si svolgeranno prossimamente.</li>
-        <li>creare un evento.</li>
-        <li>indicare la sua partecipazione ad un evento, condividerlo su app esterne e visualizzare / pubblicare commenti sotto l’evento</li>
-        <li>seguire o essere seguito da altri utenti sulla piattaforma tramite un sistema social follower/seguiti. Queste connessioni sociali verranno poi utilizzate per indicare all’utente gli eventi a cui i suoi amici partecipano.</li>
+        <li id="obbiettivo-1">visualizzare una bacheca in cui vengono mostrati gli eventi in ordine cronologico, da quelli più imminenti a quelli che si svolgeranno prossimamente.</li>
+        <li id="obbiettivo-2">creare un evento.</li>
+        <li id="obbiettivo-3">indicare la sua partecipazione ad un evento, condividerlo su app esterne e visualizzare / pubblicare commenti sotto l’evento</li>
+        <li id="obbiettivo-4">seguire o essere seguito da altri utenti sulla piattaforma tramite un sistema social follower/seguiti. Queste connessioni sociali verranno poi utilizzate per indicare all’utente gli eventi a cui i suoi amici partecipano.</li>
     </list>
 </topic>
