@@ -31,31 +31,31 @@
     </chapter>
 
     <chapter title="Servizi di autenticazione OAuth Google, Apple e Meta" id="backend-autenticazione">
-        Questi sistemi permettono all’utente di autenticarsi nell’applicazione utilizzando le loro credenziali già esistenti dei seguenti servizi: Google, Apple e Meta.
+        Questi sistemi permettono all’utente di autenticarsi nell’applicazione utilizzando le loro credenziali già esistenti dei seguenti servizi: <img src="google.png" alt="Google logo" width="24" style="inline"/> Google, <img src="apple.png" alt="Apple logo" width="24" style="inline"/> Apple e <img src="meta.png" alt="Meta logo" width="24" style="inline"/> Meta.
     </chapter>
 
     <chapter title="Google Maps" id="backend-maps">
-        Google Maps fornisce delle <tooltip term="api">API</tooltip> vengono utilizzate per mostrare all’utente una lista di possibili luoghi nella pagina di “ricerca” dell’app, se l’utente vuole effettuare una ricerca per luogo, oppure per lo stesso principio nella fase di creazione di un evento.
+        <img src="maps.png" alt="Google Maps logo" width="24" style="inline"/> <a href="https://developers.google.com/maps?hl=it">Google Maps</a> fornisce delle <tooltip term="api">API</tooltip> vengono utilizzate per mostrare all’utente una lista di possibili luoghi nella pagina di “ricerca” dell’app, se l’utente vuole effettuare una ricerca per luogo, oppure per lo stesso principio nella fase di creazione di un evento.
     </chapter>
 
     <chapter title="Firebase" id="backend-firebase">
         <p>
-            Per mandare notifiche push al dispositivo dell’utente qualora queste notifiche siano necessarie verrà impiegato il servizio <a href="https://firebase.google.com/docs/cloud-messaging?hl=it">Firebase Cloud Messaging</a>.
+            Per mandare notifiche push al dispositivo dell’utente qualora queste notifiche siano necessarie verrà impiegato il servizio <img src="firebase.png" alt="Firebase logo" width="24" style="inline"/> <a href="https://firebase.google.com/docs/cloud-messaging?hl=it">Firebase Cloud Messaging</a>.
         </p>
         <p>
-            Per registrare e monitorare i log di eventuali errori verrà utilizzato <a href="https://firebase.google.com/docs/crashlytics?hl=it">Firebase Crashlytics</a>.
+            Per registrare e monitorare i log di eventuali errori verrà utilizzato <img src="firebase.png" alt="Firebase logo" width="24" style="inline"/> <a href="https://firebase.google.com/docs/crashlytics?hl=it">Firebase Crashlytics</a>.
         </p>
     </chapter>
 
     <chapter title="Amazon S3" id="backend-s3">
-        Le immagini relative agli eventi e le foto profilo degli verranno salvate sul servizio <a href="https://aws.amazon.com/it">S3</a> di Amazon.
+        Le immagini relative agli eventi e le foto profilo degli verranno salvate sul servizio <img src="s3.png" alt="S3 logo" width="24" style="inline"/> <a href="https://aws.amazon.com/it">S3</a> di Amazon.
     </chapter>
 
     <chapter title="Brevo" id="backend-brevo">
-        Per inviare email per il recupero o reset della password agli utenti che lo richiedono, verrà impiegato un servizio di <emphasis>email service</emphasis> apposito: <a href="https://www.brevo.com/it/products/transactional-email/">Brevo</a>. Tale servizio viene inoltre utilizzato per la verifica dell’email in fase di registrazione di un nuovo utente.
+        Per inviare email per il recupero o reset della password agli utenti che lo richiedono, verrà impiegato un servizio di <emphasis>email service</emphasis> apposito: <img src="brevo.png" alt="Brevo logo" width="24" style="inline"/> <a href="https://www.brevo.com/it/products/transactional-email/">Brevo</a>. Tale servizio viene inoltre utilizzato per la verifica dell’email in fase di registrazione di un nuovo utente.
     </chapter>
 
     <chapter title="Twilio" id="backend-twilio">
-        Per verificare il numero di telefono inserito dall’utente durante la registrazione all’app, viene impiegato un <emphasis>SMS service</emphasis>: <a href="https://www.twilio.com/en-us/messaging/channels/sms">Twilio</a>.
+        Per verificare il numero di telefono inserito dall’utente durante la registrazione all’app, viene impiegato un <emphasis>SMS service</emphasis>: <img src="twilio.png" alt="Twilio logo" width="24" style="inline"/> <a href="https://www.twilio.com/en-us/messaging/channels/sms">Twilio</a>.
     </chapter>
 </topic>
