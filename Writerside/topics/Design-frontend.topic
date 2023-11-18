@@ -5,5 +5,42 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Design frontend" id="Design-frontend">
 
-    <p>Start typing here...</p>
+    <p>
+        Nel presente capitolo vengono riportati alcuni mockup relativi alle schermate dell’applicazione da realizzare.
+    </p>
+    <p>
+        Queste schermate hanno l’obiettivo di rappresentare come l’applicazione si dovrà presentare all’utente finale nel caso dei requisiti funzionali descritti precedentemente:
+    </p>
+    <list type="decimal">
+        <li><a anchor="frontend-visualizzazione-bacheca">Visualizzazione bacheca</a></li>
+        <li><a anchor="frontend-ricerca">Ricerca evento / utente / località</a></li>
+        <li><a anchor="frontend-profilo">Profilo utente</a></li>
+    </list>
+
+    <chapter title="Visualizzazione bacheca" id="frontend-visualizzazione-bacheca">
+        <img src="frontend_mockup_bacheca.png" alt="Frontend mockup bacheca eventi" width="256" thumbnail="true"/>
+        <p>
+            L'utente puó fare "tap" a destra e a sinistra della card che contiene gli eventi per scorrere rispettivamente avanti e indietro tra gli eventi del giorno.
+        </p>
+        <p>
+            Attraverso l'azione di swipe verticale puó invece scorrere le date.
+        </p>
+    </chapter>
+
+    <chapter title="Ricerca evento / utente / località" id="frontend-ricerca">
+        <img src="frontend_mockup_ricerca.png" alt="Frontend mockup ricerca" width="256" thumbnail="true"/>
+        <p>
+            L'utente seleziona la tipologia di ricerca attraverso le "chips" sotto la barra di ricerca e procede con l'inserimento del testo per la ricerca.
+        </p>
+        <p>
+            Vengono inoltre visualizzate le ricerche recenti.
+        </p>
+    </chapter>
+
+    <chapter title="Profilo utente" id="frontend-profilo">
+        <img src="frontend_mockup_profilo.png" alt="Frontend mockup profilo utente" width="256" thumbnail="true"/>
+        <p>
+            La schermata profilo utente puó essere navigata attraverso swipe verticali che rivelano le sezioni previste nell'<b>RF 7</b>
+        </p>
+    </chapter>
 </topic>

@@ -4,9 +4,20 @@
     <!-- Termini generici -->
     <term name="frontend">La parte del software visibile all'utente e con cui egli può interagire</term>
     <term name="backend">La parte del software che permette l'effettivo funzionamento delle interazioni con gli utenti e software esterni</term>
+
     <term name="rf">Requisiti funzionali</term>
     <term name="rnf">Requisiti non funzionali</term>
 
+    <!-- TODO: Descrizioni -->
+    <term name="api">Application program interface</term>
+    <term name="s3">Amazon Simple Storage System</term>
+
+    <term name="app-bar">Elemento grafico di un'applicazione che permette la navigazione rapida tra un numero limitato di pagine</term>
+
+
     <!-- Termini specifici per il contesto di E-20 -->
     <term name="utente-anonimo">Utente non autenticato</term>
+
+    <term name="stato-evento-in-corso">"in corso" é lo stato assegnato a un evento al superamento della sua data e ora d'inizio</term>
+    <term name="stato-evento-modificato">"modificato" é lo stato che viene assegnato a un evento qualora esso venga modificato nell'arco dei tre giorni precedenti all'inizio dell'evento</term>
 </terms>

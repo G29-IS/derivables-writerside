@@ -5,5 +5,207 @@
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
        title="Requisiti non funzionali" id="Requisiti-non-funzionali">
 
-    <p>Start typing here...</p>
+    <p>
+        Nel presente capitolo vengono riportati i requisiti non funzionali (<tooltip term="rnf">RF</tooltip>) del sistema.
+    </p>
+
+    <chapter title="RNF 1 - Seguiti dalla rubrica" id="analisi-rnf-1">
+        <p>
+            Al fine di facilitare l’integrazione dei nuovi utenti e promuovere la creazione di una rete di connessioni all’interno della piattaforma, in seguito al processo di registrazione sarà suggerito all’utente di seguire chi tra i suoi contatti in rubrica dispone di un account sulla piattaforma, informazione ricavata dall’associazione dell’account al numero di telefono.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 2 - Localizzazione GPS" id="analisi-rnf-2">
+        <list>
+            <li>
+                <p>
+                    Al fine di fornire una visualizzazione della bacheca maggiormente aderente alle esigenze dell’utente (<b>RF 1</b>), il sistema sarà programmato per acquisire la posizione geografica dell’utente mediante l’uso della tecnologia di localizzazione GPS.
+                </p>
+                <p>
+                    Questo processo verrà intrapreso unicamente previa assunzione del consenso esplicito dell'utente.
+                </p>
+            </li>
+            <li>
+                <p>
+                    Nel caso in cui l'utente esprima il proprio consenso all'acquisizione dei dati relativi alla localizzazione GPS, il sistema procederà a personalizzare la visualizzazione della bacheca eventi.
+                </p>
+                <p>
+                    In particolare, verranno presentati all'utente gli eventi situati nelle vicinanze della sua attuale posizione, permettendo così una fruizione dei contenuti più rilevante e connessa al contesto geografico specifico in cui si trova l'utente.
+                </p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 3 - Gestione capacità dell'evento" id="analisi-rnf-3">
+        <p>
+            Al fine di non superare la capacità massima di persone prevista per ogni evento, il sistema ne cambierà in automatico la disponibilità (<b>RF 16</b>) a <b>esaurito</b> quando viene raggiunto il numero massimo di partecipanti, bloccando la possibilità a ulteriori utenti di segnalare la loro partecipazione.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 4 - Privacy" id="analisi-rnf-4">
+        <p>
+            L’applicazione deve essere progettata e realizzata in ottemperanza delle vigenti disposizioni di legge in materia di tutela della privacy e trattamento dei dati. In particolare l’applicazione deve essere compliant al Regolamento per la protezione dei dati (<a href="https://gdpr-info.eu/">GDPR</a>).
+            I dati personali relativi all’utente (nome, cognome, data di nascita, profilo), gli eventi a cui partecipa (data, ora, località) e qualsiasi altro dato gestito dall’applicazione che possa in qualsiasi modo identificare un utente, i suoi comportamenti, le sue preferenze e la tipologia di dispositivi utilizzati non dovranno essere divulgati in alcun modo e dovranno essere conservati “in una forma che consenta l’identificazione degli interessati per un arco di tempo non superiore al conseguimento delle finalità per le quali sono trattati”. All’art. 5, comma 1, lett. e), del GDPR.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 5 - Scalabilità" id="analisi-rnf-5">
+        <p>
+            L’applicazione deve garantire l’elaborazione di un numero crescente di utenti.
+        </p>
+        <p>
+             La nostra applicazione e’ stata inizialmente progettata per soddisfare le esigenze degli utenti nella provincia di <a href="https://en.wikipedia.org/wiki/Trento">Trento</a>, con una fascia d'età compresa tra 16 e 30 anni. Prevediamo una percentuale del 10% della popolazione target nella regione per la suddetta fascia d’età che ammonta a 86.079 persone (<a href="https://statweb.provincia.tn.it/annuario/(S(x2dijtabff4h1k45ymkh5p55))/tavola.aspx?idt=3.01">fonte</a>).
+        </p>
+        <p>
+            Tuttavia, la piattaforma deve essere progettata in modo tale da poter gestire un aumento esponenziale di utenti, in previsione di una futura espansione a livello nazionale.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 6 - Portabilità" id="analisi-rnf-6">
+        <list>
+            <li>
+                L’applicazione deve garantire una portaiblità ottimale tra i principali sistemi operativi mobili e web, assicurando che gli utenti possano sfruttare l’applicazione al meglio indipendentemente dalla piattaforma.
+            </li>
+            <li>
+                <b>Piattaforme supportate</b>: l’applicazione deve essere compatibile con Android, iOS e web (Chrome, Safari, Firefox). Ogni versione dell’applicazione deve supportare almeno le 2 versioni piu’ recenti di ciascun sistema operativo.
+            </li>
+            <li>
+                <b>Adattabilità dell’interfaccia</b>: l’interfaccia utente dell’applicazione deve adattarsi automaticamente alle diverse dimensioni e risoluzioni dello schermo, offrendo un’esperienza uniforme su vari dispositivi.
+            </li>
+            <li>
+                <b>Aggiornamenti coerenti</b>: con l'evoluzione dei sistemi operativi, l’applicazione deve essere aggiornata per garantire compatibilità e performance. Gli aggiornamenti devono essere distribuiti in modo coerente su entrambe le piattaforme.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 7 - Affidabilità" id="analisi-rnf-7">
+        <list>
+            <li>L’applicazione deve garantire un livello elevato di affidabilità, minimizzando i tempi di inattività e
+                assicurando che gli utenti possano fare affidamento sull’applicazione per svolgere le funzioni previste
+                senza interruzioni o malfunzionamenti significativi.
+            </li>
+            <li>
+                <b>Tempo di attività</b>: l’applicazione deve garantire un tempo di attività del 99.5% su base mensile. Eventuali periodi di manutenzione programmata devono essere esclusi dal calcolo del tempo di attività.
+            </li>
+            <li>
+                <b>Recupero da errori</b>: l’applicazione deve prevedere meccanismi di recupero automatico in caso di errori, assicurando una ripresa rapida e una perdita minima di dati. In caso di crash o errori critici, l’applicazione deve fornire agli utenti messaggi di errore.
+            </li>
+            <li>
+                <b>Backup e ripristino</b>: i dati degli utenti devono essere backuppati regolarmente e conservati in un luogo sicuro. Deve esistere una procedura chiara e testata per il ripristino dei dati in caso di malfunzionamenti o perdite.
+            </li>
+            <li>
+                <b>Monitoraggio</b>: l’applicazione deve implementare sistemi di monitoraggio che rilevano e segnalano eventuali problemi o malfunzionamenti al team.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 8 - Lingua di sistema" id="analisi-rnf-8">
+        <p>
+            L’applicazione deve essere completamente localizzata e ottimizzata per una singola lingua, l’italiano.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 9 - Usabilità" id="analisi-rnf-9">
+        <list>
+            <li>
+                <p>
+                    L’applicazione deve fornire un’interfaccia utente intuitiva, chiara e agevole da navigare, che permetta agli utenti di accedere facilmente alle principali funzionalità e schermate, minimizzando il numero di iterazioni necessarie.
+                </p>
+                <p>
+                    L’utente deve essere in grado di utilizzare l’applicazione con facilita’ al massimo dopo 10 minuti di utilizzo.
+                </p>
+            </li>
+            <li>
+                Le schermate bacheca eventi (<b>RF 1</b>), ricerca (<b>RF 6</b>) e profilo utente (<b>RF 7</b>) devono essere accessibili direttamente da una <tooltip term="app-bar">app bar</tooltip> presente in ogni schermata dell’applicazione. Ogni schermata deve avere un’icona distintiva e autoesplicativa nella <tooltip term="app-bar">app bar</tooltip>, che rappresenti chiaramente la funzione associata.
+            </li>
+            <li>
+                Il passaggio da una schermata all’altra tramite bottom bar deve avvenire in meno di 1 secondo, garantendo un’esperienza fluida all’utente.
+            </li>
+            <li>
+                L’aspetto e la disposizione degli elementi nelle 3 schermate devono mantenere una coerenza stilistica e funzionale, permettendo all’utente di familiarizzare rapidamente con l’intero sistema.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 10 - Testabilità" id="analisi-rnf-10">
+        <list>
+            <li>
+                L’applicazione deve essere progettata e sviluppata in modo da facilitare test efficaci e riproducibili delle sue funzioni chiave, assicurando che ogni schermata e funzionalità soddisfino i requisiti previsti.
+            </li>
+            <li>
+                L’applicazione deve essere strutturata in moduli distinti per ciascuna delle 3 schermate principali, permettendo test indipendenti e isolati.
+            </li>
+            <li>
+                Una documentazione chiara delle funzionalità e dei flussi d'uso attesi deve essere fornita, facilitando la creazione di casi di test accurati e completi.
+            </li>
+            <li>
+                Durante i test, l'applicazione deve fornire feedback adeguato e generare log dettagliati per facilitare l'identificazione e la risoluzione di eventuali problemi.
+            </li>
+            <li>
+                Dovrebbe essere disponibile un ambiente di test separato, simile all'ambiente di produzione, dove le funzionalità possono essere testate senza impatti sugli utenti reali.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 11- Sicurezza" id="analisi-rnf-11">
+        <list>
+            <li>
+                L'applicazione deve garantire la protezione dei dati e delle informazioni degli utenti, impedendo accessi non autorizzati, modifiche indebite o divulgazioni dei dati personali.
+            </li>
+            <li>
+                Tutti i dati personali degli utenti (<b>RF 8</b>) devono essere criptati sia durante la trasmissione che durante l'archiviazione.
+            </li>
+            <li>
+                Tutte le operazioni rilevanti dal punto di vista della sicurezza, come accessi, modifiche dei dati o tentativi di violazione, devono essere registrate in log di sicurezza. I log devono essere monitorati per identificare e reagire prontamente a eventuali attività sospette.
+            </li>
+            <li>
+                L’email e il numero di telefono inseriti durante la fase di registrazione account devono essere verificati per accertarsi che l’utente sia il proprietario di tale indirizzo email e numero di telefono.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 12 - Caricamento delle immagini" id="analisi-rnf-12">
+        <list>
+            <li>
+                Le immagini presenti sull’applicazione (<b>RF 13</b>), indipendentemente dalla loro dimensione o risoluzione, devono essere caricate e visualizzate all'utente in maniera efficiente, garantendo tempi di attesa minimi.
+            </li>
+            <li>
+                Prima dell'upload, le immagini devono essere ottimizzate per il web, mantenendo un equilibrio tra qualità e dimensione del file.
+            </li>
+            <li>
+                Le immagini devono essere caricate e visualizzate entro 1.5 secondi dalla richiesta dell'utente in condizioni di connessione standard.
+            </li>
+            <li>
+                Le immagini frequentemente richieste devono essere memorizzate in un apposito sistema che ne acceleri i caricamenti successivi.
+            </li>
+            <li>
+                In caso di impossibilità nel caricare l'immagine, un'immagine di fallback o un messaggio appropriato dovrebbe essere mostrato all'utente.
+            </li>
+        </list>
+    </chapter>
+
+    <chapter title="RNF 13 - Registrazione tramite provider OAuth" id="analisi-rnf-13">
+        <p>
+            Per agevolare l’utente nella fase di registrazione (<b>RF 8</b>) gli verrà data la possibilità di registrarsi utilizzando i loro account Google, Apple o Facebook.
+        </p>
+        <p>
+            Se questi servizi non forniscono tutti i dati necessari per la creazione dell’account, all’utente verrà richiesto l’inserimento di questi dati mancanti.
+        </p>
+    </chapter>
+    
+    <chapter title="RNF 14 - Stato dell’evento “modificato”" id="analisi-rnf-14">
+        <p>
+            L’assegnazione dello stato <tooltip term="stato-evento-modificato">modificato</tooltip> (<b>RF 17</b>) è prevista esclusivamente nel periodo precedente la data e l’orario di inizio dell’evento, e non quando l’evento risulta già “in corso” ossia dopo la sua data e orario di inizio.
+        </p>
+        <p>
+            Tale stato viene impiegato per segnalare variazioni, siano esse anticipi o ritardi relativi all’orario di inizio dell’evento stesso, oppure modifiche della descrizione o di altre informazioni relative all’evento.
+        </p>
+    </chapter>
+
+    <chapter title="RNF 15 - Stato dell’evento “in corso”" id="analisi-rnf-15">
+        <p>
+            Alla data e ora dell’evento a esso viene segnato in automatico lo stato <tooltip term="stato-evento-in-corso">in corso</tooltip> e rimosso l’eventuale stato <tooltip term="stato-evento-modificato">modificato</tooltip> se presente.
+        </p>
+    </chapter>
+
 </topic>

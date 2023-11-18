@@ -244,9 +244,7 @@
 
         <chapter title="RF 19 - Stato evento" id="analisi-rf-19">
             <list>
-                <li>L’utente organizzatore avrà anche la possibilità di modificare le informazioni dell’evento. Ogni
-                    modifica imposterà lo stato <emphasis>modificato</emphasis> all’evento solo se le modifiche occorrono in un arco di tre
-                    giorni prima dell’inizio dell’evento.
+                <li>L’utente organizzatore avrà anche la possibilità di modificare le informazioni dell’evento. Ogni modifica imposterà lo stato <emphasis>modificato</emphasis> all’evento solo se le modifiche occorrono in un arco di tre giorni prima dell’inizio dell’evento.
                 </li>
                 <li>Gli utenti che hanno confermato la partecipazione a un evento riceveranno una notifica a ogni
                     cambiamento dello stato dell’evento.
