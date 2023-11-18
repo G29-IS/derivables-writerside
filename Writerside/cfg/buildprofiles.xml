@@ -9,6 +9,10 @@
     <build-profile instance="di">
         <variables>
             <noindex-content>false</noindex-content>
+            <algolia-id>APZM7PWPVV</algolia-id>
+            <algolia-index>derivables-writerside</algolia-index>
+            <algolia-api-key>3b8c9b944099562d675d56b7d3703882</algolia-api-key>
+            <web-root></web-root>
         </variables>
     </build-profile>
 
