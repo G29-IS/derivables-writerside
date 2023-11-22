@@ -12,7 +12,6 @@
         Nello specifico l'utente utilizzatore dell'applicazione sarà in grado di:
     </p>
     <list type="decimal">
-        <!-- TODO: Non dovremo stare più sul generale? -->
         <li id="obbiettivo-1">visualizzare una bacheca in cui vengono mostrati gli eventi in ordine cronologico, da quelli più imminenti a quelli che si svolgeranno prossimamente.</li>
         <li id="obbiettivo-2">creare un evento.</li>
         <li id="obbiettivo-3">indicare la sua partecipazione ad un evento, condividerlo su app esterne e visualizzare / pubblicare commenti sotto l’evento</li>

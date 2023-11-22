@@ -1,0 +1,155 @@
+---
+title: D3 Class diagram
+---
+classDiagram
+    note for User "password_hash sara Null se l'utente si registra tramite OAuth"
+    note for EventComment "id_comment_replied_to sarà Null se il commento è riferito ad un evento, avrà invece l'id di un altro comment se il commento è riferito ad un altro commento (nested comment)"
+
+    Event "*" --> "1" User : {id_organizer=id_user}
+    Event "*" --> "1" Place : {id_place=id_place}
+    EventComment "*" --> "1" Event : {id_event=id_event}
+    EventComment "*" --> "1" EventComment : {id_comment_replied_to=id_comment}
+    EventComment "*" --> "1" User : {id_user=id_user}
+
+    PasswordReset --> User : {id_user=id_user}
+    EmailVerification --> User : {id_user=id_user}
+    UserSession --> User : {id_user=id_user}
+
+    %% TODO: relazioni con enum?
+
+    namespace Events {
+        class EventAvailability {
+            <<enumeration>>
+            AVAILABLE
+            RUNNING_OUT
+            CANCELED
+            SOLD_OUT
+        }
+
+        class EventVisibility {
+            <<enumeration>>
+            PUBLIC
+            FOLLOWER
+            FOLLOWING
+            FOLLOWER_AND_FOLLOWING
+        }
+
+        class EventType {
+            <<enumeration>>
+            CONCERT
+            FESTIVAL
+            BAR
+            CLUB
+            PARTY
+            HOUSEPARTY
+            PRIVATEPARTY
+            WORKSHOP
+            CONGRESS
+        }
+
+        class Place {
+            -id_place: string
+            -name: string
+            -adr_address: string
+            -url: string
+        }
+
+        %% TODO: per statistiche come times_shared potremo usare qualche timeseries db ma per ora l'ho messo come semplice parametro
+        class Event {
+            -id_event: string
+            -name: string
+            -cover_image_url: string
+            -id_organizer: string
+            -description: string
+            -place: Place
+            -opening_date_time: long
+            -type: EventType
+            -max_partecipants: int?
+            -visibility: EventVisibility
+            -payment_link: string
+            -availability: Availability
+            -is_modified: bool
+            -times_shared: long
+        }
+
+        %% TODO: partecipazione agli eventi
+
+        class EventComment {
+            -id_comment: string
+            -id_comment_replied_to: string?
+            -id_event: string
+            -id_user: string
+            -content: string
+        }
+    }
+
+    namespace Users {
+        class Gender {
+            <<enumeration>>
+            MALE
+            FEMALE
+            OTHER
+            NOT_SPECIFIED
+        }
+
+        class CityOfInterest {
+            %% TODO: City %%
+        }
+
+        class UserVisibility {
+            PUBLIC
+            PRIVATE
+        }
+
+        class PasswordReset {
+            -token: string
+            -id_user: string
+            -expire_at: long
+            -created_at: long
+        }
+
+        class EmailVerification {
+            -token: string
+            -id_user: string
+            -expire_at: long
+            -created_at: long
+        }
+
+        class OAuthGoogleResponse {
+            -access_token: string
+            -refresh_token: string?
+            -expires_in_seconds: long
+            -scope: string
+        }
+
+        class OAuthGoogleUserInfo {
+            -email: string
+            -verified_email: string
+            %% TODO: Altre proprietà
+        }
+
+        %% TODO: Facebook & Apple
+        %% TODO: Follower e seguiti
+        class User {
+            -id_user: string
+            -name: string
+            -surname: string
+            -username: string
+            -email: string
+            -password_hash: string?
+            -phone: string
+            -birth_date: long
+            -gender: Gender
+            -city_of_interest: CityOfInterest
+            -visibility: UserVisibility
+            -profile_image_url: string
+        }
+
+        class UserSession {
+            -id_session: string
+            -id_user: string
+            -iat: long
+            -device_name: string?
+            -ip: string
+        }
+    }

@@ -57,7 +57,6 @@
                 <li>la data e l'ora d'inizio</li>
                 <li>il locale</li>
                 <li>il numero massimo di partecipanti (opzionale)</li>
-                <!-- TODO: Cos'era? -->
                 <li>la disponibilità</li>
                 <li>lo stato (RF 16)</li>
             </list>
@@ -118,6 +117,7 @@
                         </li>
                     </list>
                 </li>
+                <li>immagine profilo</li>
             </list>
         </chapter>
 

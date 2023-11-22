@@ -6,7 +6,6 @@
        title="Design backend" id="Design-backend">
 
     <p>
-        <!-- TODO: Va descritto come sono clusterizzate le api? -->
         Nel presente capitolo vengono riportati i sistemi esterni con cui l’applicazione dovrà interfacciarsi per poter funzionare e una loro descrizione.
     </p>
 

@@ -6,6 +6,7 @@
                  name="E-20"
                   start-page="Introduzione.topic">
 
+    <toc-element topic="D3.topic"/>
     <toc-element topic="Introduzione.topic"/>
     <toc-element topic="Analisi-dei-requisiti.topic">
         <toc-element topic="Obbiettivi-del-progetto.topic"/>
